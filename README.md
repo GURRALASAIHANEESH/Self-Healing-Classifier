@@ -5,106 +5,57 @@ This project builds a **self-healing sentiment classifier** using a **fine-tuned
 
 ---
 
-## 🚀 Project Build Steps
+## 🚀 Project Build & Run Instructions
 
-### Step 1: Clone Repository and Prepare Files
+### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/GURRALASAIHANEESH/Self-Healing-Classifier.git
 cd Self-Healing-Classifier
 ```
 
-### Step 2: Create Virtual Environment
+### Step 2: Set Up Environment
+Create a virtual environment and install dependencies:
 ```bash
 python -m venv venv
-source venv/bin/activate      # On Linux/Mac
-venv\Scripts\activate         # On Windows
-```
+# On Linux/macOS:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
 
-### Step 3: Install Dependencies
-```bash
 pip install -r requirements.txt
 ```
-Packages include:
-```txt
-transformers
-datasets
-peft
-torch
-matplotlib
-langgraph
-huggingface_hub
-```
 
----
+### Step 3: Download Fine-Tuned Model
+Due to GitHub's file size limits, the fine-tuned model (980MB+) is **not included in the GitHub repo**.
+Instead, download the model from Hugging Face:
+> [Hugging Face Model](https://huggingface.co/sunnypatel782/self-healing-sentiment-model)
 
-### Step 4: Fine-Tune the Model
-Run the following to fine-tune DistilBERT on the SST-2 dataset:
-```bash
-python fine_tune.py
-```
-This script:
-- Loads the SST-2 dataset
-- Tokenizes using `AutoTokenizer`
-- Applies LoRA for parameter-efficient fine-tuning
-- Trains the model for 4 epochs
-- Saves the model and tokenizer in `./model`
+**Place the downloaded model files into the `./model/` directory.**
 
-After training, assign readable labels:
-```python
-model.config.id2label = {0: "Negative", 1: "Positive"}
-model.config.label2id = {"Negative": 0, "Positive": 1}
-model.save_pretrained("./model")
-tokenizer.save_pretrained("./model")
-```
-
----
-
-### Step 5: Set Up LangGraph Workflow
-Each node performs a distinct role:
-- `InferenceNode`: Runs predictions with the fine-tuned model
-- `ConfidenceCheckNode`: Evaluates confidence threshold
-- `FallbackNode`: Handles user clarification or backup model fallback
-- `FinalOutputNode`: Logs and returns final decision
-
-All node implementations are placed in the `nodes/` folder.
-
----
-
-### Step 6: Run the CLI Classifier
-Start the DAG with:
+### Step 4: Run the CLI
+Execute the DAG-based CLI interface:
 ```bash
 python dag_main.py
 ```
-This CLI:
-- Accepts text input
-- Classifies it using the DAG workflow
-- Triggers fallback if confidence is low
-- Logs all decisions
-- Displays final label and plots fallback/accuracy trends
+
+This launches the interactive classifier where you:
+- Input a sentence
+- Get prediction and confidence
+- If confidence is low → fallback is triggered
+- User clarification or backup model is invoked
+- Final label is shown and logged
 
 ---
 
-## 📆 Why the Model Isn’t on GitHub
-The fine-tuned model contains large weight files (e.g., `.pt`, `.safetensors`, optimizers) that exceed GitHub’s 100MB file limit. Instead, the full model is hosted on Hugging Face.
-
-### ✅ Access the Full Model Here:
-**[Hugging Face Model](https://huggingface.co/sunnypatel782/self-healing-sentiment-model/tree/main)**
-
-Includes:
-- Fine-tuned weights
-- Tokenizer configs
-- Adapter model
-
----
-
-## 📁 Folder Structure
+## 📆 Folder Structure
 ```
-├── dag_main.py             # LangGraph DAG CLI
-├── fine_tune.py            # Fine-tuning script
-├── model/                  # Model output folder (not pushed to GitHub)
-├── logfile.log             # Prediction & fallback logs
-├── confidence_trend.png    # Trend plot
-├── logging_utils.py        # Event logging
+├── dag_main.py             # Main CLI & LangGraph DAG runner
+├── fine_tune.py            # Script for fine-tuning DistilBERT
+├── model/                  # Place Hugging Face model files here
+├── logfile.log             # Logs of interactions and decisions
+├── confidence_trend.png    # Confidence graph over inputs
+├── logging_utils.py        # Timestamped logger
+├── upload_model.py         # Script to push model to Hugging Face
 ├── nodes/
 │   ├── confidence_check.py
 │   ├── inference_node.py
@@ -116,43 +67,53 @@ Includes:
 
 ---
 
-## 📨 Submission Instructions
-The Google Form asks for:
-- GitHub repo
-- Public drive link for ZIP file
-- Demo video
+## 🧠 Bonus Feature: Backup Model Trigger
+This project implements the **optional bonus** requirement:
+- If the base model is **not confident** _and_ user clarification is vague or absent,
+- It **falls back to a backup zero-shot sentiment classifier**.
 
-### ✅ GitHub Repo (Code Only)
-> https://github.com/GURRALASAIHANEESH/Self-Healing-Classifier
-
-### ✅ Hugging Face Model
-> https://huggingface.co/sunnypatel782/self-healing-sentiment-model
-
-### ✅ Google Drive (ZIP with model, code, logs, video)
-> Replace with your actual Google Drive public link before submission
+### 🔁 Example Triggers for Backup:
+- Vague reviews: _"It was fine I guess..."
+- Sarcastic or confusing inputs
+- User replies "maybe", "kinda", etc.
 
 ---
 
-## 🔄 Sample CLI Interaction
+## 🔮 Example Output with Bonus in Action
 ```
-Enter text to classify (or 'exit'): the hero acting was a disaster
-[InferenceNode] Predicted label: Negative | Confidence: 83.48%
+Enter text to classify (or 'exit'): the heroin was hot
+[InferenceNode] Predicted label: Negative | Confidence: 84.55%
 [ConfidenceCheckNode] Confidence too low. Triggering fallback...
 [FallbackNode] Could you clarify your intent? Was this a Positive review?
-User: No
-✅ Final Label: Negative (Confirmed by user)
+User: yap
+🤖 Backup Model Suggests: Positive (79.98%)
+✅ Final Label: Positive (Used backup model)
 ```
 
 ---
 
-## ✅ Deliverables Checklist
-- [x] Fine-tuned model hosted on Hugging Face
-- [x] LangGraph DAG with fallback + backup model
-- [x] CLI with logging and confidence chart
-- [x] GitHub repo for code
-- [x] Google Drive ZIP with everything included
-- [x] Demo video walkthrough
+## 📩 Submission Links
+### GitHub Repository (Code only):
+> https://github.com/GURRALASAIHANEESH/Self-Healing-Classifier
+
+### Hugging Face Model (Due to GitHub size limits):
+> https://huggingface.co/sunnypatel782/self-healing-sentiment-model
+
+### Google Drive Folder (Full Project Zip + Video Demo):
+> [G Sai Haneesh _ATG Technical Assignment](https://drive.google.com/drive/folders/1usHvAxPVfVC4kWBTg1Kdf03jmNv_C8pR?usp=drive_link)
 
 ---
 
-Ready to submit! 🚀
+## 🎥 Demo Video
+> [Click to Watch the Demo](https://drive.google.com/file/d/1lsanQj8agSGo_NKgK4OjPyPCzcgoYlES/view?usp=drive_link)
+
+---
+
+## ✅ Final Deliverables Checklist
+- [x] Fine-tuned transformer model (Hugging Face)
+- [x] LangGraph DAG pipeline
+- [x] Confidence-based fallback system
+- [x] Bonus backup model integration
+- [x] Structured CLI + logging + confidence graph
+- [x] GitHub with clean modular code
+- [x] Google Drive (zip + video demo)
