@@ -1,0 +1,76 @@
+[2025-06-20 22:14:30] [InferenceNode] Predicted label: Positive | Confidence: 98.76%
+[2025-06-20 22:14:30] [FinalOutputNode] Final Label: Positive
+[2025-06-20 22:15:13] [InferenceNode] Predicted label: Negative | Confidence: 81.66%
+[2025-06-20 22:15:22] [FallbackNode] User confirmed model prediction → Final Label: Negative
+[2025-06-20 22:15:22] [FinalOutputNode] Final Label: Negative
+[2025-06-20 22:16:31] [InferenceNode] Predicted label: Negative | Confidence: 80.89%
+[2025-06-20 22:16:56] [FallbackNode] Corrected via user input → Final Label: Positive
+[2025-06-20 22:16:56] [FinalOutputNode] Final Label: Positive
+[2025-06-20 22:17:25] [InferenceNode] Predicted label: Positive | Confidence: 50.25%
+[2025-06-20 22:17:46] [FallbackNode] Corrected via user input → Final Label: Negative
+[2025-06-20 22:17:46] [FinalOutputNode] Final Label: Negative
+[2025-06-20 22:26:53] [InferenceNode] Predicted label: LABEL_0 | Confidence: 97.20%
+[2025-06-20 22:26:53] [FinalOutputNode] Final Label: 
+[2025-06-20 22:33:10] [InferenceNode] Predicted label: LABEL_0 | Confidence: 84.57%
+[2025-06-20 22:33:21] [FallbackNode] Corrected via user input → Final Label: Negative
+[2025-06-20 22:33:21] [FinalOutputNode] Final Label: Negative
+[2025-06-20 22:36:10] [InferenceNode] Predicted label: LABEL_0 | Confidence: 87.68%
+[2025-06-20 22:36:22] [FallbackNode] User confirmed model prediction → Final Label: LABEL_0
+[2025-06-20 22:36:22] [FinalOutputNode] Final Label: LABEL_0
+[2025-06-20 22:46:28] [InferenceNode] Predicted label: Negative | Confidence: 86.32%
+[2025-06-20 22:46:31] [FallbackNode] Corrected via user input → Final Label: Positive
+[2025-06-20 22:46:31] [FinalOutputNode] Final Label: Positive
+[2025-06-20 22:47:11] [InferenceNode] Predicted label: Negative | Confidence: 50.92%
+[2025-06-20 22:47:17] [FallbackNode] Corrected via user input → Final Label: Positive
+[2025-06-20 22:47:17] [FinalOutputNode] Final Label: Positive
+[2025-06-20 22:47:58] [InferenceNode] Predicted label: Negative | Confidence: 77.65%
+[2025-06-20 22:48:04] [FallbackNode] User confirmed model prediction → Final Label: Negative
+[2025-06-20 22:48:04] [FinalOutputNode] Final Label: Negative
+[2025-06-20 22:48:11] [InferenceNode] Predicted label: Negative | Confidence: 52.27%
+[2025-06-20 22:48:18] [FallbackNode] Corrected via user input → Final Label: Positive
+[2025-06-20 22:48:18] [FinalOutputNode] Final Label: Positive
+[2025-06-20 22:57:13] [InferenceNode] Predicted label: Positive | Confidence: 98.77%
+[2025-06-20 22:57:13] [ConfidenceCheckNode] Accepted model prediction → Final Label: Positive
+[2025-06-20 22:57:13] [FinalOutputNode] Final Label: Positive
+[2025-06-20 22:58:04] [InferenceNode] Predicted label: Negative | Confidence: 95.01%
+[2025-06-20 22:58:04] [ConfidenceCheckNode] Accepted model prediction → Final Label: Negative
+[2025-06-20 22:58:04] [FinalOutputNode] Final Label: Negative
+[2025-06-20 22:58:39] [InferenceNode] Predicted label: Negative | Confidence: 84.57%
+[2025-06-20 22:58:52] [FallbackNode] User confirmed model prediction → Final Label: Negative
+[2025-06-20 22:58:52] [FinalOutputNode] Final Label: Negative
+[2025-06-20 23:00:23] [InferenceNode] Predicted label: Positive | Confidence: 91.61%
+[2025-06-20 23:00:36] [FallbackNode] User confirmed model prediction → Final Label: Positive
+[2025-06-20 23:00:36] [FinalOutputNode] Final Label: Positive
+[2025-06-20 23:01:14] [InferenceNode] Predicted label: Positive | Confidence: 90.50%
+[2025-06-20 23:01:20] [FallbackNode] Corrected via user input → Final Label: Negative
+[2025-06-20 23:01:20] [FinalOutputNode] Final Label: Negative
+[2025-06-21 07:59:57] [InferenceNode] Predicted label: Negative | Confidence: 93.08%
+[2025-06-21 08:00:16] [FallbackNode] User confirmed model prediction → Final Label: Negative
+[2025-06-21 08:00:16] [FinalOutputNode] Final Label: Negative
+[2025-06-21 08:00:41] [InferenceNode] Predicted label: Negative | Confidence: 83.48%
+[2025-06-21 08:00:54] [FallbackNode] User confirmed model prediction → Final Label: Negative
+[2025-06-21 08:00:54] [FinalOutputNode] Final Label: Negative
+[2025-06-21 08:01:18] [InferenceNode] Predicted label: Positive | Confidence: 98.75%
+[2025-06-21 08:01:18] [ConfidenceCheckNode] Accepted model prediction → Final Label: Positive
+[2025-06-21 08:01:18] [FinalOutputNode] Final Label: Positive
+[2025-06-21 08:02:17] [InferenceNode] Predicted label: Negative | Confidence: 95.10%
+[2025-06-21 08:02:17] [ConfidenceCheckNode] Accepted model prediction → Final Label: Negative
+[2025-06-21 08:02:17] [FinalOutputNode] Final Label: Negative
+[2025-06-21 08:03:10] [InferenceNode] Predicted label: Negative | Confidence: 84.55%
+[2025-06-21 08:03:19] [FallbackNode] Used backup model → Final Label: Positive
+[2025-06-21 08:03:19] [FinalOutputNode] Final Label: Positive
+[2025-06-21 08:04:08] [InferenceNode] Predicted label: Negative | Confidence: 95.84%
+[2025-06-21 08:04:08] [ConfidenceCheckNode] Accepted model prediction → Final Label: Negative
+[2025-06-21 08:04:08] [FinalOutputNode] Final Label: Negative
+[2025-06-21 08:04:58] [InferenceNode] Predicted label: Positive | Confidence: 98.49%
+[2025-06-21 08:04:58] [ConfidenceCheckNode] Accepted model prediction → Final Label: Positive
+[2025-06-21 08:04:58] [FinalOutputNode] Final Label: Positive
+[2025-06-21 08:05:33] [InferenceNode] Predicted label: Positive | Confidence: 98.15%
+[2025-06-21 08:05:34] [ConfidenceCheckNode] Accepted model prediction → Final Label: Positive
+[2025-06-21 08:05:34] [FinalOutputNode] Final Label: Positive
+[2025-06-21 08:06:07] [InferenceNode] Predicted label: Positive | Confidence: 91.01%
+[2025-06-21 08:06:20] [FallbackNode] Corrected via user input → Final Label: Negative
+[2025-06-21 08:06:20] [FinalOutputNode] Final Label: Negative
+[2025-06-21 08:16:32] [InferenceNode] Predicted label: Negative | Confidence: 98.04%
+[2025-06-21 08:16:32] [ConfidenceCheckNode] Accepted model prediction → Final Label: Negative
+[2025-06-21 08:16:32] [FinalOutputNode] Final Label: Negative

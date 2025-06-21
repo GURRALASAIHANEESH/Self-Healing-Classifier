@@ -1,0 +1,49 @@
+[2025-06-20 17:57:13] [Inference] Text: The movie was painfully slow and boring. | Label: Negative | Confidence: 0.98
+[2025-06-20 17:57:13] [ConfidenceCheck] Confidence: 0.98 | Confident: True
+[2025-06-20 18:11:18] [InferenceNode] Predicted label: LABEL_0 | Confidence: 0.98
+[2025-06-20 18:11:18] [ConfidenceCheck] Confidence: 0.98 | Confident: True
+[2025-06-20 18:11:18] [FinalOutputNode] Final Label: LABEL_0
+[2025-06-20 18:17:00] [InferenceNode] Predicted label: LABEL_0 | Confidence: 0.98
+[2025-06-20 18:17:00] [ConfidenceCheck] Confidence: 0.98 | Confident: True
+[2025-06-20 18:17:00] [FinalOutputNode] Final Label: LABEL_0
+[2025-06-20 18:19:18] [InferenceNode] Predicted label: LABEL_0 | Confidence: 0.98
+[2025-06-20 18:19:18] [ConfidenceCheck] Confidence: 0.98 | Confident: True
+[2025-06-20 18:19:18] [FinalOutputNode] Final Label: LABEL_0
+[2025-06-20 18:22:30] [ConfidenceCheck] Confidence: 0.98 | Confident: True
+[2025-06-20 18:27:32] [InferenceNode] Predicted label: Negative | Confidence: 0.98
+[2025-06-20 18:27:32] [ConfidenceCheck] Confidence: 0.98 | Confident: True
+[2025-06-20 18:27:32] [ConfidenceCheckNode] Decision: accept
+[2025-06-20 18:27:32] [FinalOutputNode] Final Label: Negative
+[2025-06-20 18:28:14] [InferenceNode] Predicted label: Negative | Confidence: 0.98
+[2025-06-20 18:28:14] [ConfidenceCheck] Confidence: 0.98 | Confident: True
+[2025-06-20 18:28:14] [ConfidenceCheckNode] Decision: accept
+[2025-06-20 18:28:14] [FinalOutputNode] Final Label: Negative
+[2025-06-20 18:30:31] [InferenceNode] Predicted label: Negative | Confidence: 0.98
+[2025-06-20 18:30:31] [ConfidenceCheck] Confidence: 0.98 | Confident: True
+[2025-06-20 18:30:31] [ConfidenceCheckNode] Decision: accept
+[2025-06-20 18:30:31] [FinalOutputNode] Final Label: Negative
+[2025-06-20 18:30:41] [InferenceNode] Predicted label: Negative | Confidence: 0.98
+[2025-06-20 18:30:41] [ConfidenceCheck] Confidence: 0.98 | Confident: True
+[2025-06-20 18:30:41] [ConfidenceCheckNode] Decision: accept
+[2025-06-20 18:30:41] [FinalOutputNode] Final Label: Negative
+[2025-06-20 18:39:38] [InferenceNode] Predicted label: Negative | Confidence: 0.98
+[2025-06-20 18:39:38] [ConfidenceCheck] Predicted label: Negative | Confidence: 0.98 | Confident: True
+[2025-06-20 18:39:38] [ConfidenceCheckNode] Decision: accept
+[2025-06-20 18:39:38] [FinalOutputNode] Final Label: Negative
+[2025-06-20 20:34:25] [InferenceNode] Predicted label: LABEL_0 | Confidence: 0.98
+[2025-06-20 20:34:25] [ConfidenceCheck] Predicted label: LABEL_0 | Confidence: 0.98 | Confident: True
+[2025-06-20 20:34:25] [FinalOutputNode] Final Label: 
+[2025-06-20 20:36:52] [InferenceNode] Predicted label: LABEL_0 | Confidence: 98.32%
+[2025-06-20 20:36:52] [ConfidenceCheck] Predicted label: LABEL_0 | Confidence: 0.98 | Confident: True
+[2025-06-20 20:36:52] [FinalOutputNode] Final Label: 
+[2025-06-20 21:59:51] [InferenceNode] Predicted label: LABEL_0 | Confidence: 98.00%
+[2025-06-20 21:59:51] [ConfidenceCheck] Predicted label: LABEL_0 | Confidence: 0.98 | Confident: True
+[2025-06-20 21:59:51] [FinalOutputNode] Final Label: 
+[2025-06-20 22:05:49] [InferenceNode] Predicted label: Negative | Confidence: 98.00%
+[2025-06-20 22:05:49] [ConfidenceCheck] Predicted label: Negative | Confidence: 0.98 | Confident: True
+[2025-06-20 22:05:49] [FinalOutputNode] Final Label: 
+[2025-06-20 22:09:29] [InferenceNode] Predicted label: Negative | Confidence: 98.00%
+[2025-06-20 22:09:29] [FinalOutputNode] Final Label: 
+[2025-06-20 22:11:27] [InferenceNode] Predicted label: Negative | Confidence: 96.44%
+[2025-06-20 22:11:27] [FinalOutputNode] Final Label: Negative
+[2025-06-20 22:12:21] [InferenceNode] Predicted label: Negative | Confidence: 76.53%

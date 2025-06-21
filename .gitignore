@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints
+.env
+.venv
+*.sqlite3
+*.log
+
+# Hugging Face training artifacts
+checkpoint-*/
+trainer_state.json
+*.bin
+
+# System
+.DS_Store
+Thumbs.db

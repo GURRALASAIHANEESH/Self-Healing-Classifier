@@ -1,0 +1,9 @@
+transformers==4.41.2
+datasets
+peft
+accelerate
+scikit-learn
+langchain
+langgraph
+openai
+tqdm
