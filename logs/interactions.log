@@ -1,0 +1,31 @@
+2025-06-20 12:38:23 - Inference | Input: The movie was painfully slow and boring. | Label: LABEL_0 | Confidence: 0.97
+2025-06-20 12:38:23 - Confidence Check | Confidence: 0.97 | Decision: final_result
+2025-06-20 12:38:23 - Final Decision | Label: LABEL_0
+2025-06-20 12:39:36 - Inference | Input: yes | Label: LABEL_1 | Confidence: 0.87
+2025-06-20 12:39:36 - Confidence Check | Confidence: 0.87 | Decision: final_result
+2025-06-20 12:39:36 - Final Decision | Label: LABEL_1
+2025-06-20 15:29:45 - Inference | Input: The movie was painfully slow and boring. | Label: Negative | Confidence: 0.97
+2025-06-20 15:29:45 - Confidence Check | Confidence: 0.97 | Decision: final_result
+2025-06-20 15:29:45 - Final Decision | Label: Negative
+2025-06-20 15:38:25 - Inference | Input: The movie was painfully slow and boring. | Label: Negative | Confidence: 0.97
+2025-06-20 15:38:25 - Confidence Check | Confidence: 0.97 | Decision: final_result
+2025-06-20 15:38:25 - Final Output | Label: Negative
+2025-06-20 16:10:09 - Inference | Input: The movie was painfully slow and boring. | Label: Negative | Confidence: 0.98
+2025-06-20 16:10:09 - Confidence Check | Confidence: 0.98 | Decision: trigger_fallback
+2025-06-20 16:10:37 - Fallback | Clarified Label: Negative
+2025-06-20 16:10:37 - Final Output | Label: Negative
+2025-06-20 16:13:14 - Inference | Input: The movie was painfully slow and boring. | Label: Negative | Confidence: 0.97
+2025-06-20 16:13:14 - Confidence Check | Confidence: 0.97 | Decision: trigger_fallback
+2025-06-20 16:13:14 - Fallback Triggered | Asking if it was a Positive review
+2025-06-20 16:13:40 - User clarified: no really | Final Label: Negative
+2025-06-20 16:13:40 - Final Output | Label: Negative
+2025-06-20 16:17:06 - Inference | Input: The movie was painfully slow and boring. | Label: Negative | Confidence: 0.97
+2025-06-20 16:17:06 - Confidence Check | Confidence: 0.97 | Decision: final_result
+2025-06-20 16:17:06 - Final Output | Label: Negative
+2025-06-20 16:18:23 - Inference | Input: The movie was kind of okay I guess. | Label: Positive | Confidence: 0.84
+2025-06-20 16:18:23 - Confidence Check | Confidence: 0.84 | Decision: final_result
+2025-06-20 16:18:23 - Final Output | Label: Positive
+2025-06-20 16:18:23 - Inference | Input:  | Label: Positive | Confidence: 0.92
+2025-06-20 16:18:23 - Confidence Check | Confidence: 0.92 | Decision: final_result
+2025-06-20 16:18:23 - Final Output | Label: Positive
+2025-06-20 17:57:13 - Inference | Input: The movie was painfully slow and boring. | Label: Negative | Confidence: 0.98
